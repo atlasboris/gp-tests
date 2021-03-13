@@ -1,1 +1,19 @@
-<p>reactive-form-tests works!</p>
+<div class="container">
+    <form [formGroup]="singUpFrom" (ngSubmit)="onSubmit()">
+
+        <input formControlName="username" type="text" placeholder="username">
+
+        <input formControlName="email" type="text" placeholder="email">
+
+        <div class="radio-wrap">
+            <div class="radio" *ngFor="let gender of genders">
+                <label>
+                    <input formControlName="gender" type="radio" [value]="gender">
+                    {{ gender }}
+                </label>
+            </div>
+        </div>
+
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+</div>

@@ -21,12 +21,14 @@ import { ReactiveFormTestsComponent } from './reactive-form-tests/reactive-form-
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
+
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    AppRoutingModule,
+    
     MatSelectModule
   ],
   providers: [],
