@@ -1,1 +1,6 @@
-<p>mat-select-tests works!</p>
+<mat-form-field appearance="fill" >
+    <mat-label>Branches</mat-label>
+    <mat-select multiple [formControl]="selectedBranches">
+        <mat-option *ngFor="let branch of branchesList" [value]="branch.branchId" (click)="onClick()">{{branch.branchName}}</mat-option>
+    </mat-select>
+</mat-form-field>
