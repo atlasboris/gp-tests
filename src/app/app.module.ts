@@ -8,16 +8,22 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import {MatDatepickerModule} from '@angular/material/datepicker';
+// import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+// import {MatNativeDateModule} from '@angular/material/core';
 // my:
 import { MatSelectTestsComponent } from './mat-select-tests/mat-select-tests.component';
-import { ReactiveFormTestsComponent } from './reactive-form-tests/reactive-form-tests.component'; 
+import { ReactiveFormTestsComponent } from './reactive-form-tests/reactive-form-tests.component';
+import { MatDatepickerTestsComponent } from './mat-datepicker-tests/mat-datepicker-tests.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     MatSelectTestsComponent,
-    ReactiveFormTestsComponent
+    ReactiveFormTestsComponent,
+    MatDatepickerTestsComponent
   ],
   imports: [
     BrowserModule,
@@ -28,10 +34,12 @@ import { ReactiveFormTestsComponent } from './reactive-form-tests/reactive-form-
     ReactiveFormsModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    
-    MatSelectModule
+
+    MatSelectModule,
+    MatDatepickerModule,
+    // MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
