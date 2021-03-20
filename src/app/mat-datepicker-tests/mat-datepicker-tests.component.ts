@@ -7,16 +7,14 @@ import { FormControl, FormGroup } from '@angular/forms';
   styleUrls: ['./mat-datepicker-tests.component.scss']
 })
 export class MatDatepickerTestsComponent implements OnInit {
-  // picker = new FormControl(); 
-  // @ViewChild('picker', {static: true}) picker: ElementRef;
-  // range = new FormGroup({
-  //   start: new FormControl(),
-  //   end: new FormControl()
-  // });
+  datePickerData: any = new FormControl();
   constructor() { }
 
   ngOnInit(): void {
     
   }
 
+  dateChanged(){
+    console.log('date picker data: ',this.datePickerData.value)
+  }
 }

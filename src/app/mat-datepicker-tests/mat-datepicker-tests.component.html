@@ -1,8 +1,13 @@
-<mat-form-field>
-    <mat-label>Choose a date</mat-label>
-    <input matInput [matDatepicker]="picker">
-    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-    <mat-datepicker #picker></mat-datepicker>
-</mat-form-field>
 
-<!-- <p>Selected range: {{range.value | json}}</p> -->
+<h3>workin ex: </h3>
+<small>If you want to customize the icon that is rendered inside the mat-datepicker-toggle, you can do so by using the matDatepickerToggleIcon directive:</small>
+<div>
+    <mat-form-field class="example-full-width">
+        <mat-label>Choose a date</mat-label>
+        <input matInput [matDatepicker]="picker" [formControl]="datePickerData" (dateChange)="dateChanged()">
+        <mat-datepicker-toggle matSuffix [for]="picker">
+            <span class="material-icons">icon</span>
+        </mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+</div>

@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatDatepickerModule} from '@angular/material/datepicker';
 // import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 // import {MatNativeDateModule} from '@angular/material/core';
@@ -16,6 +16,8 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatSelectTestsComponent } from './mat-select-tests/mat-select-tests.component';
 import { ReactiveFormTestsComponent } from './reactive-form-tests/reactive-form-tests.component';
 import { MatDatepickerTestsComponent } from './mat-datepicker-tests/mat-datepicker-tests.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 
 @NgModule({
@@ -37,6 +39,9 @@ import { MatDatepickerTestsComponent } from './mat-datepicker-tests/mat-datepick
 
     MatSelectModule,
     MatDatepickerModule,
+    MatNativeDateModule, 
+    MatFormFieldModule,
+    MatInputModule
     // MatNativeDateModule
   ],
   providers: [],

@@ -1,6 +1,8 @@
-<mat-form-field appearance="fill" >
+<h5>select with checkboxes : </h5>
+<mat-form-field appearance="fill">
     <mat-label>Branches</mat-label>
     <mat-select multiple [formControl]="selectedBranches">
-        <mat-option *ngFor="let branch of branchesList" [value]="branch.branchId" (click)="onClick()">{{branch.branchName}}</mat-option>
+        <mat-option *ngFor="let branch of branchesList" [value]="branch.branchId" (click)="onClick()">
+            {{branch.branchName}}</mat-option>
     </mat-select>
 </mat-form-field>
