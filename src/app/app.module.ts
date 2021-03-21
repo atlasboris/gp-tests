@@ -18,6 +18,8 @@ import { ReactiveFormTestsComponent } from './reactive-form-tests/reactive-form-
 import { MatDatepickerTestsComponent } from './mat-datepicker-tests/mat-datepicker-tests.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { CustomPipeTestsComponent } from './custom-pipe-tests/custom-pipe-tests.component';
+import { EnumTranslatePipe } from './custom-pipe-tests/EnumTranslate.pipe';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { MatInputModule } from '@angular/material/input';
     AppComponent,
     MatSelectTestsComponent,
     ReactiveFormTestsComponent,
-    MatDatepickerTestsComponent
+    MatDatepickerTestsComponent,
+    CustomPipeTestsComponent,
+    EnumTranslatePipe
   ],
   imports: [
     BrowserModule,
