@@ -8,8 +8,7 @@ export class EnumTranslatePipe implements PipeTransform {
         console.log(viewValue, enumName, enums[enumName]);
         let x =  enums[enumName];
         let y =  enums[enumName][viewValue]
-        debugger;
+
         return y;
     }
-
 }

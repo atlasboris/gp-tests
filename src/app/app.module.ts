@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 // import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 // import {MatNativeDateModule} from '@angular/material/core';
@@ -20,6 +20,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { CustomPipeTestsComponent } from './custom-pipe-tests/custom-pipe-tests.component';
 import { EnumTranslatePipe } from './custom-pipe-tests/EnumTranslate.pipe';
+import { MatTableTestsComponent } from './mat-table-tests/mat-table-tests.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatSortModule } from '@angular/material/sort';
 
 
 @NgModule({
@@ -29,7 +32,8 @@ import { EnumTranslatePipe } from './custom-pipe-tests/EnumTranslate.pipe';
     ReactiveFormTestsComponent,
     MatDatepickerTestsComponent,
     CustomPipeTestsComponent,
-    EnumTranslatePipe
+    EnumTranslatePipe,
+    MatTableTestsComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,9 +47,12 @@ import { EnumTranslatePipe } from './custom-pipe-tests/EnumTranslate.pipe';
 
     MatSelectModule,
     MatDatepickerModule,
-    MatNativeDateModule, 
+    MatNativeDateModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatTableModule,
+    MatSortModule
+
     // MatNativeDateModule
   ],
   providers: [],
