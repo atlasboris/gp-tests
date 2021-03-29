@@ -23,7 +23,8 @@ import { EnumTranslatePipe } from './custom-pipe-tests/EnumTranslate.pipe';
 import { MatTableTestsComponent } from './mat-table-tests/mat-table-tests.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
-
+// don't know s hera-li? static local data?
+import { CdkColumnDef } from '@angular/cdk/table';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,7 @@ import { MatSortModule } from '@angular/material/sort';
 
     // MatNativeDateModule
   ],
-  providers: [],
+  providers: [CdkColumnDef],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

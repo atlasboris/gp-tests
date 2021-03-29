@@ -14,13 +14,3 @@ export class CustomPipeTestsComponent implements OnInit {
   }
 
 }
-
-export enum CourierVehicleType {
-  Bicycle = 'BICYCLE',
-  Motorcycle = 'MOTORCYCLE',
-  MotorWithBox = 'MOTOR_WITH_BOX',
-  Mini = 'MINI',
-  FamilyCar = 'FAMILY_CAR',
-  Suv = 'SUV',
-  Truck = 'TRUCK'
-}
