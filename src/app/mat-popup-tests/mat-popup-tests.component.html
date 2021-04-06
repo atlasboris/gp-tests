@@ -1,0 +1,26 @@
+<h1 mat-dialog-title>Hi {{data.name}}</h1>
+<div mat-dialog-content>
+  <p>What's id?</p>
+  <mat-form-field>
+    <mat-label>Favorite Animal</mat-label>
+    <input matInput [(ngModel)]="data.id">
+  </mat-form-field>
+  <h5>select with enum : </h5>
+  <mat-form-field>
+    <mat-label>Account Status</mat-label>
+    <mat-select [(ngModel)]="selectedValue">
+      <mat-option *ngFor="let acc of accountStatus | keyvalue" [value]="acc.key" (click)="onClick()">
+        {{acc.value}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  
+  <h3>selected:</h3>
+  {{selectedValue}}
+  <h3>is selected?</h3>
+  {{selectedValue}}
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button [mat-dialog-close]="data.id" cdkFocusInitial [disabled]="!selectedValue">Ok</button>
+</div>

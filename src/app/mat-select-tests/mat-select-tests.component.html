@@ -6,3 +6,16 @@
             {{branch.branchName}}</mat-option>
     </mat-select>
 </mat-form-field>
+<h5>select with enum : </h5>
+<mat-form-field>
+  <mat-label>Account Status</mat-label>
+  <mat-select [(ngModel)]="selectedValue">
+    <mat-option *ngFor="let acc of accountStatus | keyvalue" [value]="acc.key" (click)="onClick()">
+      {{acc.value}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<h3>selected:</h3>
+{{selectedValue}}
+
