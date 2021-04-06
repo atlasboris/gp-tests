@@ -25,8 +25,6 @@ import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
 // don't know s hera-li? static local data?
 import { CdkColumnDef } from '@angular/cdk/table';
-import { MatPopupTestsComponent } from './mat-popup-tests/mat-popup-tests.component';
-import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -37,7 +35,6 @@ import { MatDialogModule } from '@angular/material/dialog';
     CustomPipeTestsComponent,
     EnumTranslatePipe,
     MatTableTestsComponent,
-    MatPopupTestsComponent,
   ],
   imports: [
     BrowserModule,
@@ -55,8 +52,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatFormFieldModule,
     MatInputModule,
     MatTableModule,
-    MatSortModule,
-    MatDialogModule
+    MatSortModule
 
     // MatNativeDateModule
   ],
