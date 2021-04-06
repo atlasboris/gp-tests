@@ -7,5 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'gp-m-tests';
-  // this will be commited and after removed
 }
